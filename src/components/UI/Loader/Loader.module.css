@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.animation1, .animation2, .animation3, .animation4 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    display: inline-block;
+    transition: 1.5s ease;
+}
+
+.main {
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    animation: main 5s linear infinite ;
+}
+
+@keyframes main {
+    from {
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animation1 {
+    animation: animation1 2s alternate infinite;
+}
+
+@keyframes animation1 {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-5px, -5px);
+        background-color: rgba(3, 210, 43, 0.97);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+
+.animation2 {
+    animation: animation2 2s alternate infinite;
+}
+
+@keyframes animation2 {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(5px, -5px);
+        background-color: rgba(3, 210, 43, 0.97);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+
+.animation3 {
+    animation: animation3 2s alternate infinite;
+}
+
+@keyframes animation3 {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-5px, 5px);
+        background-color: rgba(3, 210, 43, 0.97);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+
+.animation4 {
+    animation: animation4 2s alternate infinite;
+}
+
+@keyframes animation4 {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(5px, 5px);
+        background-color: rgba(3, 210, 43, 0.97);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
